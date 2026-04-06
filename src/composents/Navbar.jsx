@@ -47,7 +47,7 @@ function Navbar() {
           <div className="menu bg-[#fb8014] overflow-y-hidden fixed z-10 top-16 left-[-150%] w-1/2 min-h-1/2 justify-center items-center flex-col gap-10 duration-1000 ease-in pointer pr-7 md:hidden flex space-x-6 list-none text-3xl">
             <li className='p-2'>Acceuil</li>
             <li href="#cet_nk">Qui sommes-nous</li>
-            <li id='contacts'>Contacts</li>
+            <li href="#contacts">Contacts</li>
           </div>
         )}
         {/* affichage PC/DESKTOP */}
