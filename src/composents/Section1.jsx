@@ -2,8 +2,8 @@ import fondateur from '../assets/fondateur.jpg'
 import mat from '../assets/mat.jpeg'
 function Section1() {
     return (
-        <div className='my-6 md:my-16'>
-            <h1 className='text-xl md:text-4xl text-center font-bold'>Qui sommes-nous</h1>
+        <div id='cet_nk' className='my-6 md:my-16'>
+            <h1 className='text-xl md:text-4xl text-center font-bold'>QUI SOMMMES-NOUS</h1>
             <div className="md:flex justify-around m-6 ">
                 {/* affiche mobile */}
                 <div className='md:hidden'>
@@ -20,6 +20,10 @@ function Section1() {
                         <img className='w-80' src={mat} alt="" srcset="" />
                         <p className='text-[8px] '>L’un des bâtiments de l’école</p>
                     </div>
+                    <a href="" >
+                        Voir le PDF
+                    </a>
+                    
                     <div class="md:hidden aspect-video justify-items-center mt-4">
                         <iframe
                             class="w-full h-full"
@@ -27,7 +31,7 @@ function Section1() {
                             allowfullscreen>
                         </iframe>
                     </div>
-                        <p className='text-[8px] md:hidden'>Ceremonie d'ouverture de l’école</p>
+                    <p className='text-[8px] md:hidden'>Ceremonie d'ouverture de l’école</p>
                 </div>
                 {/* affiche desktop/pc */}
                 <div className='w-2/3 max-md:hidden '>
@@ -39,7 +43,7 @@ function Section1() {
                     {/* video de l'ouverture de l'ecole */}
                     <div class="max-md:hidden aspect-video justify-items-center my-4">
                         <iframe
-                            class="w-1/2 h-1/2"
+                            class="w-1/2 h-full"
                             src="https://www.youtube.com/embed/Yl_8Z5MINWI"
                             allowfullscreen>
                         </iframe>

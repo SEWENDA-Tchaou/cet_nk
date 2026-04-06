@@ -38,16 +38,16 @@ function Navbar() {
           )
         }
         {isOpon ? (
-          <div className="menu bg-[#fb801485] overflow-y-hidden fixed z-10 top-16 right-0 w-1/2 min-h-1/2 justify-center items-center flex-col gap-10 duration-1000 ease-in pointer pr-7 md:hidden flex space-x-6 list-none text-3xl">
-            <li className='font-bold  p-2 text-[#fff] rounded-sm'>Acceuil</li>
-            <li>Qui sommes-nous</li>
-            <li>Contacts</li>
+          <div className="menu bg-[#fb8014] overflow-y-hidden fixed z-10 top-16 right-0 w-1/2 min-h-1/2 justify-center items-center flex-col gap-10 duration-1000 ease-in pointer pr-7 md:hidden flex space-x-6 list-none text-3xl">
+            <li href="#acceuil" className='text-xl'>Acceuil</li>
+            <li href="#cet_nk" className='text-xl text-center'>Qui sommes-nous </li>
+            <li id='contacts' className='text-xl'>Contacts</li>
           </div>
         ) : (
-          <div className="menu bg-[#fb801485] overflow-y-hidden fixed z-10 top-16 left-[-150%] w-1/2 min-h-1/2 justify-center items-center flex-col gap-10 duration-1000 ease-in pointer pr-7 md:hidden flex space-x-6 list-none text-3xl">
-            <li className='font-bold p-2 text-[#fff] rounded-sm'>Acceuil</li>
-            <li>Qui sommes-nous</li>
-            <li>Contacts</li>
+          <div className="menu bg-[#fb8014] overflow-y-hidden fixed z-10 top-16 left-[-150%] w-1/2 min-h-1/2 justify-center items-center flex-col gap-10 duration-1000 ease-in pointer pr-7 md:hidden flex space-x-6 list-none text-3xl">
+            <li className='p-2'>Acceuil</li>
+            <li href="#cet_nk">Qui sommes-nous</li>
+            <li id='contacts'>Contacts</li>
           </div>
         )}
         {/* affichage PC/DESKTOP */}
@@ -56,7 +56,7 @@ function Navbar() {
             // href='#acceuil'className='font-bold bg-[#FB8014] p-2 text-[#fff] rounded-sm'
             href="#acceuil"
             onClick={() => setActive("acceuil")}
-            className={`p-2 rounded-sm transition duration-300 
+            className={`p-2 max-md:text-sm rounded-sm transition duration-300 
             ${active === "acceuil" ? "bg-[#FB8014] font-bold text-white" : ""}`}
           >Acceuil</a>
           <a
@@ -67,8 +67,8 @@ function Navbar() {
             ${active === "cet_nk" ? "bg-[#FB8014] font-bold text-white" : ""}`}
           >Qui sommes-nous</a>
           <a
-            href='#contacts'
             //  href="#contacts"
+            href='#contacts'
             onClick={() => setActive("contacts")}
             className={`p-2 rounded-sm transition duration-300 
             ${active === "contacts" ? "bg-[#FB8014] font-bold text-white" : ""}`}
@@ -93,8 +93,8 @@ function Navbar() {
                 <h2 className=" text-xl font-bold mb-4">Mon Popup</h2>
                 <p>Bienvenue sur mon site 🎉<br />
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos natus nemo impedit, perferendis consectetur tempore accusantium doloremque vel suscipit eum quae consequuntur deleniti autem exercitationem temporibus numquam! Corrupti aspernatur possimus temporibus, ipsum adipisci ratione, voluptatem eos voluptas nulla veritatis natus fuga. Quos odit ullam facilis quam sint recusandae odio quia.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, beatae soluta praesentium accusamus sit ut reiciendis. Pariatur recusandae sunt neque eos cum error facilis rerum consequuntur facere illum perspiciatis itaque, dolor quidem iusto impedit natus ea molestiae voluptatibus fugiat nobis. Dolorem, consequuntur reprehenderit recusandae quae consectetur minima eaque natus maiores nisi libero harum fuga, corporis iure enim illum architecto magnam aliquid ex provident. Earum, recusandae voluptatibus quas eum provident impedit quisquam porro delectus ea neque est veniam minima sint rem quae quia architecto exercitationem atque praesentium molestias repudiandae. Quis unde nostrum laboriosam debitis vero ratione. Ex enim esse molestiae minima.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut cupiditate neque fuga laborum error officia, ipsam ab omnis eum vero, praesentium, sequi quaerat molestiae fugit voluptates veritatis deserunt quibusdam. Amet consectetur similique voluptatum minus ullam, ad fuga atque dolorem eligendi accusamus laboriosam facilis beatae tenetur cum officiis sunt possimus quisquam molestias ipsum obcaecati! Quaerat, aliquam maiores ducimus ad quam cum voluptatum nemo ullam, mollitia, voluptatem sunt incidunt? Illo voluptates, corrupti voluptatem atque quidem officia a dolores omnis culpa, ipsam ab fugiat, consequuntur dicta sunt nisi laborum autem nemo dignissimos. Possimus ut quos ipsum in eum? Et laboriosam perferendis asperiores officiis, assumenda fugit quam ad sed exercitationem, praesentium perspiciatis repudiandae natus maxime ducimus eos soluta quas sint. Quasi eaque iste quo at doloremque ipsam accusamus voluptatibus odio eveniet impedit. Natus libero corporis omnis nihil sunt officia quidem rerum voluptate soluta, minima, quis, repellendus a deleniti architecto iusto! Exercitationem accusamus unde maiores deserunt perferendis earum blanditiis, esse mollitia at, quam deleniti dolore iste, officia quibusdam! Delectus repellat earum deserunt laudantium velit veniam provident. Rerum deserunt facilis aliquam doloremque impedit. Consequatur, ab, obcaecati voluptates esse necessitatibus ipsam ea repudiandae dolorem voluptatibus minus omnis distinctio labore alias, expedita quasi adipisci velit. Quae, eligendi quidem!
+                  {/* Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, beatae soluta praesentium accusamus sit ut reiciendis. Pariatur recusandae sunt neque eos cum error facilis rerum consequuntur facere illum perspiciatis itaque, dolor quidem iusto impedit natus ea molestiae voluptatibus fugiat nobis. Dolorem, consequuntur reprehenderit recusandae quae consectetur minima eaque natus maiores nisi libero harum fuga, corporis iure enim illum architecto magnam aliquid ex provident. Earum, recusandae voluptatibus quas eum provident impedit quisquam porro delectus ea neque est veniam minima sint rem quae quia architecto exercitationem atque praesentium molestias repudiandae. Quis unde nostrum laboriosam debitis vero ratione. Ex enim esse molestiae minima.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut cupiditate neque fuga laborum error officia, ipsam ab omnis eum vero, praesentium, sequi quaerat molestiae fugit voluptates veritatis deserunt quibusdam. Amet consectetur similique voluptatum minus ullam, ad fuga atque dolorem eligendi accusamus laboriosam facilis beatae tenetur cum officiis sunt possimus quisquam molestias ipsum obcaecati! Quaerat, aliquam maiores ducimus ad quam cum voluptatum nemo ullam, mollitia, voluptatem sunt incidunt? Illo voluptates, corrupti voluptatem atque quidem officia a dolores omnis culpa, ipsam ab fugiat, consequuntur dicta sunt nisi laborum autem nemo dignissimos. Possimus ut quos ipsum in eum? Et laboriosam perferendis asperiores officiis, assumenda fugit quam ad sed exercitationem, praesentium perspiciatis repudiandae natus maxime ducimus eos soluta quas sint. Quasi eaque iste quo at doloremque ipsam accusamus voluptatibus odio eveniet impedit. Natus libero corporis omnis nihil sunt officia quidem rerum voluptate soluta, minima, quis, repellendus a deleniti architecto iusto! Exercitationem accusamus unde maiores deserunt perferendis earum blanditiis, esse mollitia at, quam deleniti dolore iste, officia quibusdam! Delectus repellat earum deserunt laudantium velit veniam provident. Rerum deserunt facilis aliquam doloremque impedit. Consequatur, ab, obcaecati voluptates esse necessitatibus ipsam ea repudiandae dolorem voluptatibus minus omnis distinctio labore alias, expedita quasi adipisci velit. Quae, eligendi quidem! */}
                 </p>
 
                 <button
