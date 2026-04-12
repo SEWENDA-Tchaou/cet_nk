@@ -81,7 +81,9 @@ function Navbar() {
       <div id='acceuil' className=" bg-[url('./assets/acceuil.png')] h-screen bg-cover bg-center">
         <div className=''>
 
-          <h1 style={{ fontFamily: 'Kavoon, cursive' }} className='max-md:py-30 max-md:pl-12 max-md:text-2xl md:py-40 md:pl-24 md:text-6xl'>les réssi de demain c’est au <br /> CET-NK !</h1>
+          <h1 style={{ fontFamily: 'Kavoon, cursive' }} className='max-md:py-30 max-md:pl-12 max-md:text-2xl md:py-20 lg:py-40 md:pl-24 md:text-6xl'>
+            les réssi de demain c’est au <br /> CET-NK !
+          </h1>
           <button
             onClick={() => setOpen(true)}
             className='max-md:hidden cursor-pointer md:ml-20 md:px-24 rounded-2xl md:py-1 md:text-xl border-1 border-[#A1D9F6] bg-[#FB8014]'>ACTUALITE DE L’ECOLE

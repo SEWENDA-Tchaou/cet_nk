@@ -34,7 +34,7 @@ function Section1() {
                     <p className='text-[8px] md:hidden'>Ceremonie d'ouverture de l’école</p>
                 </div>
                 {/* affiche desktop/pc */}
-                <div className='w-2/3 max-md:hidden '>
+                <div className='w-2/3 mx-4 max-md:hidden '>
                     <p className='text-xl text-justify'>
                         consectetur tellus id. Arcu vel tempor malesuada vivamus tellus tempus. Nisl sed velit dui magna. Diam scelerisque hac libero et velit tellus quam scelerisque viverra. Suspendisse amet neque auctor ullamcorper venenatis. Natoque sed gravida porta egestas. Egestas euismod in risus ipsum amet euismod. Ut diam fringilla nec consectetur ut vel viverra aliquet. Aliquet enim non ipsum sodales enim a. Odio sagittis ultricies mattis ut blandit augue. Semper diam leo nec lectus tempor velit consequat in.
                     </p>
