@@ -28,7 +28,7 @@ function Section2() {
                 </h3>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-2 md:mx-10 md:p-6 ">
-                <div className="bg-white p-4 rounded-xl shadow hover:bg-[#4e4b4929]">
+                <div className="bg-white max-md:bg-[#4e4b4929] p-4 rounded-xl shadow hover:bg-[#4e4b4929]">
                     <h2 className="md:text-lg font-bold">AGROPASTORALE</h2>
 
                     <div className="flex justify-between">
@@ -64,7 +64,7 @@ function Section2() {
                     )}
                 </div>
 
-                <div class="bg-white p-4 rounded-xl shadow hover:bg-[#4e4b4929]">
+                <div class="bg-white max-md:bg-[#4e4b4929] p-4 rounded-xl shadow hover:bg-[#4e4b4929]">
                     <h2 class="md:text-lg font-bold">ELECETROTECHNIQUE</h2>
                     <div className="flex justify-between">
                         <div>
@@ -100,7 +100,7 @@ function Section2() {
                     )}
                 </div>
 
-                <div class=" p-4 rounded-xl shadow hover:bg-[#4e4b4929]">
+                <div class=" p-4 max-md:bg-[#4e4b4929] rounded-xl shadow hover:bg-[#4e4b4929]">
                     <h2 class="md:text-lg font-bold">GENIE-CIVIL</h2>
                     <div className="flex justify-between">
                         <div>
@@ -144,7 +144,7 @@ function Section2() {
                 </h3>
             </div>
              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-2 md:mx-10 md:p-6 ">
-                <div className="bg-white p-4 rounded-xl shadow hover:bg-[#4e4b4929]">
+                <div className="bg-white max-md:bg-[#4e4b4929] p-4 rounded-xl shadow hover:bg-[#4e4b4929]">
                     <h2 className="md:text-lg font-bold">MAÇONNERIE</h2>
 
                     <div className="flex justify-between">
@@ -180,7 +180,7 @@ function Section2() {
                     )}
                 </div>
 
-                <div class="bg-white p-4 rounded-xl shadow hover:bg-[#4e4b4929]">
+                <div class="bg-white max-md:bg-[#4e4b4929] p-4 rounded-xl shadow hover:bg-[#4e4b4929]">
                     <h2 class="md:text-lg font-bold">ELECTRICITE D'EQUIPEMENT</h2>
                     <div className="flex justify-between">
                         <div>
