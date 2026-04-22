@@ -23,7 +23,7 @@ function Section1() {
                     <a href="" >
                         Voir le PDF
                     </a>
-                    
+
                     <div class="md:hidden aspect-video justify-items-center mt-4">
                         <iframe
                             class="w-full h-full"
@@ -36,10 +36,9 @@ function Section1() {
                 {/* affiche desktop/pc */}
                 <div className='w-2/3 mx-4 max-md:hidden '>
                     <p className='text-xl text-justify'>
-                        consectetur tellus id. Arcu vel tempor malesuada vivamus tellus tempus. Nisl sed velit dui magna. Diam scelerisque hac libero et velit tellus quam scelerisque viverra. Suspendisse amet neque auctor ullamcorper venenatis. Natoque sed gravida porta egestas. Egestas euismod in risus ipsum amet euismod. Ut diam fringilla nec consectetur ut vel viverra aliquet. Aliquet enim non ipsum sodales enim a. Odio sagittis ultricies mattis ut blandit augue. Semper diam leo nec lectus tempor velit consequat in.
+                        CET NK est créé le 28 avril 2023 par l'arrêté No 2023/189/MEPSTA/ CAB . À sa création, il est doté de deux filières en CAP : maçonnerie et électricité d'équipement ,et de trois (3) filières en BT  que sont BT en Génie civil, BT en Électrotechnique puis BT en Agropastoral . N'dewone kondji se trouve dans la Région Maritime au Togo et plus précisément dans la Préfecture de Yoto à environ 15 km au Nord-est de Tabligbo le chef lieu de la Préfecture. C'est un cadre bien calme et propice à l'apprentissage. À la fin de chaque année scolaire, l'établissement s'investit à décrocher des stages à chaque apprenant auprès des entreprises et de ses partenaires particuliers pour une familiarisation des apprenants d'avec les réalités du terrain. Au CET NK, l'administration et le corps des formateurs expérimentés s'efforcent à permettre aux apprenants à être capables de se prendre en charge une fois le diplôme de fin de formation obtenu. Au CET NK, l'indépendance commence par la capacité à Faire...                   
                     </p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aperiam explicabo impedit unde illo, facere distinctio laboriosam sapiente, voluptate suscipit ratione placeat quis, nihil iure voluptas sunt doloribus fugiat! Optio sequi vel culpa molestiae, architecto modi quam expedita tempora, ipsam accusantium doloremque illo amet aliquam fuga deserunt cum soluta quibusdam.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aperiam explicabo impedit unde illo, facere distinctio laboriosam sapiente, voluptate suscipit ratione placeat quis, nihil iure voluptas sunt doloribus fugiat! Optio sequi vel culpa molestiae, architecto modi quam expedita tempora, ipsam accusantium doloremque illo amet aliquam fuga deserunt cum soluta quibusdam.</p>
+                    
                     {/* video de l'ouverture de l'ecole */}
                     <div class="max-md:hidden aspect-video justify-items-center my-4">
                         <iframe
