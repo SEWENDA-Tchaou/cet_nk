@@ -51,17 +51,16 @@ function Navbar() {
           )
         }
         {isOpon ? (
-          <div className="menu bg-[#fb8014] overflow-y-hidden fixed z-10 top-16 right-0 w-1/2 min-h-1/2 justify-center items-center flex-col gap-10 duration-1000 ease-in pointer pr-7 md:hidden flex space-x-6 list-none text-3xl">
-            <li href="#acceuil" className='text-xl'>Acceuil</li>
-            <li href="#cet_nk" className='text-xl text-center'>Qui sommes-nous </li>
-            <li id='contacts' className='text-xl'>Contacts</li>
+          <div className="menu bg-[#fb8014] overflow-y-hidden fixed z-10 top-16 right-0 w-1/2 min-h-1/2 justify-center items-center flex-col pl-2 duration-1000 ease-in pointer pr-7 md:hidden flex list-none text-3xl">
+           <p>Devise :</p>
+           <p>Travail</p>
+           <p>-</p>
+           <p>Discipline</p>
+           <p>-</p>
+           <p>Reussite</p>
           </div>
         ) : (
-          <div className="menu bg-[#fb8014] overflow-y-hidden fixed z-10 top-16 left-[-150%] w-1/2 min-h-1/2 justify-center items-center flex-col gap-10 duration-1000 ease-in pointer pr-7 md:hidden flex space-x-6 list-none text-3xl">
-            <li className='p-2'>Acceuil</li>
-            <li href="#cet_nk">Qui sommes-nous</li>
-            <li href="#contacts">Contacts</li>
-          </div>
+          ""
         )}
         {/* affichage PC/DESKTOP */}
         <div className="menu hidden md:flex space-x-6 text-3xl pr-5 list-none">
@@ -94,8 +93,8 @@ function Navbar() {
       <div id='acceuil' className=" bg-[url('./assets/acceuil.png')] h-screen bg-cover bg-center">
         <div className=''>
 
-          <h1 style={{ fontFamily: 'Kavoon, cursive' }} className='max-md:py-30 max-md:pl-12 max-md:text-2xl md:py-20 lg:py-40 md:pl-24 md:text-6xl'>
-            les réssi de demain c’est au <br /> CET-NK !
+          <h1 style={{ fontFamily: 'Kavoon, cursive' }} className='max-md:py-30 max-md:pl-4 max-md:text-2xl md:py-20 lg:py-40 md:pl-24 md:text-6xl'>
+            les réssi de demain c’est au <span className='md:hidden'>CET-NK !</span><br /> <span className='max-md:hidden'>CET-NK !</span>
           </h1>
           <button
             onClick={() => setOpen(true)}
