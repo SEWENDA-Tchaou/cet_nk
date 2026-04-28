@@ -1,11 +1,12 @@
 import React from 'react'
 import { HiMenu } from "react-icons/hi"
 import { IoClose } from "react-icons/io5"
+import { FaThumbsUp } from "react-icons/fa";
 import '../App.css'
 import logo_cet_nk from '../assets/logo_cet_nk.jpg'
 import acceuil from '../assets/acceuil.png'
 import { useState } from "react"
-
+import defile_cetnk from '../assets/defile_cetnk.png'
 
 function Navbar() {
   const [isOpon, setIsOpen] = useState(false)
@@ -15,6 +16,18 @@ function Navbar() {
   const [active, setActive] = useState("acceuil");
   const [open, setOpen] = useState(false);
 
+  const [like, setLike] = useState(false)
+  const [count, setCount] = useState(0)
+
+  const handlelike = () => {
+
+    if (like) {
+      setCount(count - 1)
+    } else {
+      setCount(count + 1)
+    }
+    setLike(!like)
+  }
 
   return (
     <nav>
@@ -86,25 +99,40 @@ function Navbar() {
           </h1>
           <button
             onClick={() => setOpen(true)}
-            className='max-md:hidden cursor-pointer md:ml-20 md:px-24 rounded-2xl md:py-1 md:text-xl border-1 border-[#A1D9F6] bg-[#FB8014]'>ACTUALITE DE L’ECOLE
+            className=' cursor-pointer max-md:ml-6 max-md:text-[12px] max-md:px-4 max-md:text-white md:ml-20 md:px-24 rounded-2xl md:py-1 md:text-xl border-1 border-[#A1D9F6] bg-[#FB8014]'
+          >ACTUALITE DE L’ECOLE
           </button>
           {open && (
-            <div className="fixed inset-0 bg-black/90 flex justify-center items-center">
+            <div className="p-6 fixed inset-0 bg-black/90 flex justify-center items-center">
+              <button
+                onClick={() => setOpen(false)}
+                className="max-md:top-14 mt-4 absolute mr-7 top-20 right-0 max-md:text-black md:bg-gray-500 hover:bg-red-500 text-white px-2 py-2 rounded"
+              >
+                x
+              </button>
+              <div className="bg-white overflow-y-auto h-full mt-22 p-2 rounded-xl shadow-lg text-center">
+                <div className="flex">
+                  <button
+                    onClick={handlelike}
+                    className=" text-xl font-bold mb-4 cursor-pointer">
+                    {
+                      like ?
+                        <FaThumbsUp size={30} color="red" /> : <FaThumbsUp size={30} color="blue" />
+                    }
+                  </button>
+                  <p>{count}</p>
+                </div>
 
-              <div className="bg-white w-1/2  h-4/5 p-6 rounded-xl shadow-lg text-center">
-                <h2 className=" text-xl font-bold mb-4">Mon Popup</h2>
-                <p>Bienvenue sur mon site 🎉<br />
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos natus nemo impedit, perferendis consectetur tempore accusantium doloremque vel suscipit eum quae consequuntur deleniti autem exercitationem temporibus numquam! Corrupti aspernatur possimus temporibus, ipsum adipisci ratione, voluptatem eos voluptas nulla veritatis natus fuga. Quos odit ullam facilis quam sint recusandae odio quia.
-                  {/* Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, beatae soluta praesentium accusamus sit ut reiciendis. Pariatur recusandae sunt neque eos cum error facilis rerum consequuntur facere illum perspiciatis itaque, dolor quidem iusto impedit natus ea molestiae voluptatibus fugiat nobis. Dolorem, consequuntur reprehenderit recusandae quae consectetur minima eaque natus maiores nisi libero harum fuga, corporis iure enim illum architecto magnam aliquid ex provident. Earum, recusandae voluptatibus quas eum provident impedit quisquam porro delectus ea neque est veniam minima sint rem quae quia architecto exercitationem atque praesentium molestias repudiandae. Quis unde nostrum laboriosam debitis vero ratione. Ex enim esse molestiae minima.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut cupiditate neque fuga laborum error officia, ipsam ab omnis eum vero, praesentium, sequi quaerat molestiae fugit voluptates veritatis deserunt quibusdam. Amet consectetur similique voluptatum minus ullam, ad fuga atque dolorem eligendi accusamus laboriosam facilis beatae tenetur cum officiis sunt possimus quisquam molestias ipsum obcaecati! Quaerat, aliquam maiores ducimus ad quam cum voluptatum nemo ullam, mollitia, voluptatem sunt incidunt? Illo voluptates, corrupti voluptatem atque quidem officia a dolores omnis culpa, ipsam ab fugiat, consequuntur dicta sunt nisi laborum autem nemo dignissimos. Possimus ut quos ipsum in eum? Et laboriosam perferendis asperiores officiis, assumenda fugit quam ad sed exercitationem, praesentium perspiciatis repudiandae natus maxime ducimus eos soluta quas sint. Quasi eaque iste quo at doloremque ipsam accusamus voluptatibus odio eveniet impedit. Natus libero corporis omnis nihil sunt officia quidem rerum voluptate soluta, minima, quis, repellendus a deleniti architecto iusto! Exercitationem accusamus unde maiores deserunt perferendis earum blanditiis, esse mollitia at, quam deleniti dolore iste, officia quibusdam! Delectus repellat earum deserunt laudantium velit veniam provident. Rerum deserunt facilis aliquam doloremque impedit. Consequatur, ab, obcaecati voluptates esse necessitatibus ipsam ea repudiandae dolorem voluptatibus minus omnis distinctio labore alias, expedita quasi adipisci velit. Quae, eligendi quidem! */}
+                <h3 className='upercase font-bold'>
+                  Défilé des élèves de CET-NK à l'occasion du 27 Avril 2026<br />
+                </h3>
+                <p className=' h-full text-justify'>
+                  À l'occasion de son accèssion à l'independance, le Togo fêtait son 66ème Anniversaire d'independance. Les élèves du College d'enseignement technique de N'dewonè-Kondji ont prient part aux activités dont le défilé militaire et civile. <br />
+                  Après le passage des troupes militaires, place au défilé civil. Les élèves de CET-NK habilés dans leur tenue scolaire, ont défilé au rithme de la musique.
+                <img src={defile_cetnk} alt="" srcset="" />
                 </p>
 
-                <button
-                  onClick={() => setOpen(false)}
-                  className="mt-4 bg-red-500 text-white px-4 py-2 rounded"
-                >
-                  Fermer
-                </button>
+
               </div>
 
             </div>
