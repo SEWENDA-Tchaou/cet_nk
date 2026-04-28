@@ -99,7 +99,7 @@ function Navbar() {
           </h1>
           <button
             onClick={() => setOpen(true)}
-            className=' cursor-pointer max-md:ml-6 max-md:text-[12px] max-md:px-4 max-md:text-white md:ml-20 md:px-24 rounded-2xl md:py-1 md:text-xl border-1 border-[#A1D9F6] bg-[#FB8014]'
+            className=' cursor-pointer max-md:ml-6  max-md:px-4 max-md:text-white md:ml-20 md:px-24 rounded-2xl md:py-1 md:text-xl border-1 border-[#A1D9F6] bg-[#FB8014]'
           >ACTUALITE DE L’ECOLE
           </button>
           {open && (
